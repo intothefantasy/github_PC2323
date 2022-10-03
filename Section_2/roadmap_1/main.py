@@ -8,4 +8,4 @@ api = fastapi.FastAPI()
 def endpoint():
     return {"msg": "Hello everyone"}
 
-uvicorn.run(api)
+uvicorn.run(api, port=1987, host='0.0.0.0')
